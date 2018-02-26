@@ -1,0 +1,31 @@
+body{
+	/*background: pink;*/
+	/*background: blue;*/
+	/*background: rgb(0,0,0);*/
+	/*background: rgba(155,155,155,0.5);*/
+	background: #FFDAB9;
+	color: black;
+
+}
+header{
+	border: 10px solid #A52A2A;
+	text-align: center;
+}
+
+header nav ul li
+{	
+	background: orange;
+	border: 2px solid #A52A2A;
+	border-radius: 10px;
+	display: inline-block;
+	width: 90px;
+}
+
+header nav ul li:hover
+{	
+	background: #A52A2A;
+	border: 2px solid orange;
+	border-radius: 10px;
+	display: inline-block;
+	width: 90px;
+}
