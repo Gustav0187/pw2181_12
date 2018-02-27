@@ -18,14 +18,42 @@ header nav ul li
 	border: 2px solid #A52A2A;
 	border-radius: 10px;
 	display: inline-block;
+	/*The margin property is a shorthand property for the margin-top, margin-right, margin-bottom, and margin-left properties.*/
+    /*margin: 10px;*/
+    /*margin: 0px 20px 0px 0px;*/
+    margin-right: 20px;
+	/*An element's padding is the space between its content and its border.*/
+	/*padding: 20px;*/
+	padding: 15px 20px;
+	/*padding: 5px 10px 8px 2px;*/
 	width: 90px;
 }
-
-header nav ul li:hover
+header nav ul li:hover 
 {	
 	background: #A52A2A;
 	border: 2px solid orange;
 	border-radius: 10px;
 	display: inline-block;
 	width: 90px;
+}
+
+
+main 
+{
+	margin-top: 20px;
+}
+main article
+{
+	border: 2px dashed #A52A2A;
+	display: inline-block;
+	/*margin-top: 20px;*/
+	vertical-align: top;
+	width: 32.65%;
+}
+footer 
+{
+	border: 10px solid #A52A2A;
+	font-weight: bold; /*negritas*/
+	padding: 50px;
+	text-align: center;
 }
