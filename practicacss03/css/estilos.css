@@ -1,0 +1,45 @@
+body{
+	font-size: 16px;  /*1em*/
+	margin: 0 auto;
+	max-width: 1078px;
+	min-width: 1078px;
+}
+header input{
+	text-align: right;
+}
+#seccion01{
+	background: #2B2B2B;
+}
+#seccion01 article{
+	display: inline-block;
+}
+#secc01art01{
+	/*background: #AEC85A;*/
+}
+#secc01art02{
+	background: #AEC85A;
+}
+#secc01art03{
+	background: #5A5A5A;
+}
+#secc01art04{
+	background: #D02F42;
+}
+#secc01art05{
+	background: #D3D3D3;
+}
+#seccion02{
+	background: #2B2B2B;
+}
+.colorblanco{
+	color:white;
+}
+.colorgris{
+	color:gray;
+}
+.letragrande{
+	font-size: 1.5em;
+}
+.nito{
+	font-weight: bold;
+}
