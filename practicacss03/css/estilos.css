@@ -12,21 +12,29 @@ header input{
 }
 #seccion01 article{
 	display: inline-block;
+	vertical-align: top;
 }
 #secc01art01{
 	/*background: #AEC85A;*/
+
+	width: 30%;
 }
 #secc01art02{
 	background: #AEC85A;
+	min-height: 300px;
+	width: 30%;
 }
 #secc01art03{
 	background: #5A5A5A;
+	width: 30%;
 }
 #secc01art04{
 	background: #D02F42;
+	width: 30%;
 }
 #secc01art05{
 	background: #D3D3D3;
+	width: 30%;
 }
 #seccion02{
 	background: #2B2B2B;
