@@ -1,0 +1,54 @@
+/*img con atributo alt*/
+img[alt]{
+	border: 10px solid hotpink;
+}
+/*imagen con atributo SRC cadena exacta*/
+img[src="img/dong.png"]{
+	width: 800px;
+}
+
+/* ^ = circunflejo  */
+/*Imagen con atributo SRC al inicio de la cadena*/
+img[src^="img/"]{
+	width: 150px;
+}
+
+/*Imagen con atributo SRC al final de la cadena*/
+img[src$="jpg"]{
+	width: 500px;
+}
+
+/*Imagen con atributo SRC en cualquier parte de la cadena*/
+img[src*="mg/"]{
+	width: 400px;
+}
+/*El caracter ~ indica que estos selectores estan separados por espacios*/
+article[class~="resaltado"]{
+	border: 5px dashed tomato;
+}
+article[class~="archivo"]{
+	border: 5px dashed greenyellow;
+}
+article[class~="ingles"]{
+	border: 5px dashed skyblue;
+}
+/*El caracter | indica que estan separados por guiones*/
+article[class|="ingles"]{
+	border: 5px dashed tomato;
+	text-align: center;
+}
+
+/*Selector de secundarios.
+Seleccionar solamente las <p>
+que se encuentran inmediatamente
+despues del <div>*/
+
+div > p{    /*solo hijos directos*/    
+	color:green;
+}
+
+/*Todos los elementos <p> seran seleccionados*/
+
+div p{
+	color:violet;
+}
