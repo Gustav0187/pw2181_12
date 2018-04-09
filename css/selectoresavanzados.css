@@ -52,3 +52,43 @@ div > p{    /*solo hijos directos*/
 div p{
 	color:violet;
 }
+/*Seleccionar solo el elemento <p> 
+que esta inmediatamente despues del elemento<h2> 
+- Hermano Adyacente*/
+h2 + p{
+	color:green;
+}
+/*Seleccionar todos los elementos <p> 
+del elemento especificado 
+- Hermano General*/
+h2 ~ p{
+	color:gray;
+}
+/*Poner en color rojo el texto de las secciones menos el id="referencias"*/
+#resumen,#experimento,#pruebas,#resultados,#conclusiones{
+	color:tomato;
+}
+/*Poner en color rosa el texto de las secciones menos el id="referencias"*/
+section:not(#referencias){
+	color:hotpink;
+}
+
+li:nth-child(odd){ /*Impares*/
+	color:green;
+}
+
+li:nth-child(even){ /*Pares*/
+	color:blue;
+}
+
+li:nth-child(5){ /*Quinto Elemento*/
+	color:tomato;
+}
+
+li:nth-last-child(1){ /*Ultimo Elemento*/
+	color:skyblue;
+}
+
+p:first-line{
+	font-weight: bold;
+}
