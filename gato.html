@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>El gaturro</title>
+	<link rel="stylesheet" href="css/gato.css">
+</head>
+<body>
+	
+	<input type="button" value="" id="B01" onclick="marca();">
+	<input type="button" value="" id="B02" onclick="marca();">
+	<input type="button" value="" id="B03" onclick="marca();"> <br>
+	<input type="button" value="" id="B04" onclick="marca();">
+	<input type="button" value="" id="B05" onclick="marca();">
+	<input type="button" value="" id="B06" onclick="marca();"> <br>
+	<input type="button" value="" id="B07" onclick="marca();">
+	<input type="button" value="" id="B08" onclick="marca();">
+	<input type="button" value="" id="B09" onclick="marca();">
+
+	<br>
+
+	<input type="button" id="btn" value="Abrir" onclick="cambiar();">
+
+	  Jugador 1 = O
+	  Jugador 2 = X
+
+	<p>Tiempo Transcurrido =  <div id="TiempoTotal"></div></p>
+	  
+	<p>Tiempo Jugador = <div id="Tiempo Jugador"></div></p>
+	
+
+	<script>
+		function marca()
+		{
+			document.getElementById("B01").innerHTML = 
+		disabled=true;
+		}
+
+		function enviarNotificacion(){
+			//Comprobar que el navegador soporta notificaciones
+			if (!("Notification" in window)) {
+				alert("No soporta notificaciones");
+			}else if (Notification.permission==="denied" || Notification.permission==="default") {
+				//pedimos permiso
+				Notification.requestPermission(function(permission){
+					if (permission === "granted") {
+						var notificacion = new Notification("Bienvenido a las notificaciones de PW2181_12");
+					}
+				});
+			}else if (Notification.permission === "granted") {
+				var notificacion = new Notification("segunda notificacion");
+			}
+		}
+		
+		var ctr = 0;
+		function cambiar(){ 
+		
+			
+			if(ctr == 0){
+
+				document.getElementById("btn").value = "Cerrar"; 
+				ctr = 1;
+
+			}else{
+
+				document.getElementById("btn").value = "Abrir"; 
+				ctr = 0;
+			}
+		}
+
+	</script>
+</body>
+</html>
