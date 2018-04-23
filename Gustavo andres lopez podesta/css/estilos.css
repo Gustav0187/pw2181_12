@@ -1,0 +1,123 @@
+body{
+	font-size: 16px;  /*1em*/
+	margin: 0 auto;
+	max-width: 1078px;
+	min-width: 1078px;
+}
+header{
+	text-align: right;
+	
+}
+header img{
+	margin-top: 40px;
+	margin-right: 410px;
+}
+header span{
+	float: right;
+	margin-top: 140px; 
+	margin-right: 20px;
+	position: relative;
+}
+header ul{
+	margin-top: -20px;
+	margin-right: 60px;
+}
+header ul li{
+	display: inline-block;
+	margin-right: 10px;
+	padding-right: 20px;
+}
+article{
+	
+	display: inline-block;
+	margin-top: 40px;
+	vertical-align: top;
+}
+article input{
+	text-align: center;
+	margin-right: 30px;
+	margin-bottom: 50px;
+
+}
+article span{
+	font-size: 1.5em;
+	margin-top: 50px;
+
+}
+footer{
+	margin-bottom: 50px;
+}
+footer ul{
+	text-align: right;
+	margin-right: 120px;
+}
+footer ul img{
+	margin-right: 10px;
+}
+footer span{
+	margin-left: 30px;
+	margin-right: 350px;
+}
+
+#cotton{
+	border-radius: 525px;
+	margin-left: 40px;
+	margin-right: 80px;
+	margin-top: 40px;
+	height: 400px;
+	width: 400px;
+}
+#fotografo{
+	float: right;
+	margin-top: 140px; 
+	margin-right: 20px;
+	position: relative;
+}
+.chica{
+	height: 30px;
+	width: 30px;
+}
+.circular{
+
+	height: 120px;
+	width: 120px;
+	border-radius: 500px;
+}
+.circularGran{
+
+	height: 150px;
+	width: 150px;
+	border-radius: 500px;
+}
+.colorAma{
+    background: #f8ca42;
+}
+.colorVer{
+    background: #80bcb6;
+}
+.colorRos{
+	background: #f8a097;
+}
+.grande{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.letrablanca{
+	color:white;
+	text-align: center;
+}
+.letramediana{
+	font-size: 1.1em;
+}
+.letrapeque{
+	font-size: 0.5em;
+}
+.colorgris{
+	color:gray;
+}
+.Rosa{
+	color:#f8a097;
+}
+.verde{
+	color:#80bcb6;
+}
