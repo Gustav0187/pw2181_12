@@ -4,7 +4,7 @@
   "description": "Listado de Usuarios de randomuser y pdf",
   "main": "main.js",
   "scripts": {
-  	"start": "electron .",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
