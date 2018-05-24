@@ -6,8 +6,10 @@ body{
 	max-width: 1024px;
 
 }
-
-#secInicio{
+#frmUsuarios{
+	display: none;
+}
+#secInicio,#frmUsuarios{
 
 	margin: 0 auto;
 	margin-top: 50px;
