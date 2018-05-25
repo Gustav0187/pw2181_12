@@ -67,8 +67,38 @@ var inicioApp = function(){
             buscarUsuario();
         }
     }
+    var Guardar = function(){
+        var usuario = $("#txtNombreUsuario").val();
+        var nombre  = $("#txtNombre").val();
+        var clave   = $("#txtClaveUsuario").val();
+        if (usuario != "" && nombre != "" && clave != "" ) {
+            $.ajax({
+            cache:false,
+            type: "POST",
+            dataType: "json",
+            url: "php/guardarusuario.php",
+            data: parametros,
+            success: function(response){
+                if(response.respuesta == true){
+                    alert("Datos Guardados Correctamente");
+                    $("#frmUsuarios > input").val("");
+                }else{
+                    alert("Ocurrio un error, intente de nuevo mas tarde");
+                }
+
+            },
+            error: function(xhr,ajaxOptions,throwError){
+               
+               
+            }
+        });
+        }else{
+            alert("Llene todos los campos");
+        }
+    }
     $("#btnAceptar").on("click",Aceptar);
-    $("#txtNombreUsuario").on("keypress",teclaNombreUsuario)
+    $("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
+    $("#btnGuardar").on("click",Guardar);
 }
 
 $(document).ready(inicioApp);
