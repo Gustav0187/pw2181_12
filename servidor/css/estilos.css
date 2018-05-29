@@ -6,7 +6,7 @@ body{
 	max-width: 1024px;
 
 }
-#frmUsuarios{
+#frmUsuarios,#frmListado{
 	display: none;
 }
 #secInicio,#frmUsuarios{
